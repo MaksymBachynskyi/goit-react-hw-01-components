@@ -6,7 +6,7 @@ import {
 export const Statistics = ({ items, title }) => {
   return (
     <WrapStatistics>
-      {title && <h2>Upload stats</h2>}
+      {title && <h2>{title}</h2>}
       <StatisticsList>
         {items.map(({ id, label, percentage }) => {
           return (
